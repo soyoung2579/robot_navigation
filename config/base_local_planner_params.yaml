@@ -1,16 +1,22 @@
-base_local_planner:
-  planner_frequency: 20.0
-  max_vel_x: 0.45
+DWAPlannerROS:
+  max_vel_x: 0.5
   min_vel_x: 0.1
   max_vel_y: 0.0
   min_vel_y: 0.0
   max_rotational_vel: 1.0
   min_rotational_vel: 0.4
+
   acc_lim_x: 2.5
   acc_lim_y: 2.5
   acc_lim_theta: 3.2
+
   yaw_goal_tolerance: 0.1
   xy_goal_tolerance: 0.2
   latch_xy_goal_tolerance: true
-  holonomic_robot: true
+  holonomic_robot: false  # true면 전 방향 이동 가능
+
+  sim_time: 1.7
+  vx_samples: 20
+  vy_samples: 0
+  vtheta_samples: 40
   dwa: true

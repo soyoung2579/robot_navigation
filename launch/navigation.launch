@@ -4,8 +4,8 @@
 
 
     <!-- Map server -->
-    <arg name="map_file" default="$(find robot_navigation)/maps/test.yaml"/>
-    <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
+    <!--<arg name="map_file" default="$(find robot_navigation)/maps/test.yaml"/>-->
+    <!--<node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>-->
     
     <!-- move_base -->
     <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
@@ -15,6 +15,6 @@
         <rosparam file="$(find robot_navigation)/config/global_costmap_params.yaml" command="load" /> 
         <rosparam file="$(find robot_navigation)/config/base_local_planner_params.yaml" command="load" />
     </node>
-
+    
 </launch> 
 
