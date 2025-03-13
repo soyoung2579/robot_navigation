@@ -1,6 +1,6 @@
 # move_base_params.yaml
 move_base:
-  #base_local_planner: "base_local_planner/TrajectoryPlannerROS"
+  base_local_planner: "base_local_planner/DWAPlannerROS"
   global_planner: "navfn/NavfnROS"
   recovery_behavior_enabled: true
   footprint: [[-0.3725, -0.49], [-0.3725, 0.49], [0.3725, 0.49], [0.3725, -0.49]]
