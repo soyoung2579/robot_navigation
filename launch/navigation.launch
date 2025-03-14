@@ -2,7 +2,7 @@
 
 <launch>
 
-    <param name="/use_sim_time" value="true"/>
+    <!--<param name="/use_sim_time" value="true"/>-->
     
     <!-- Map server -->
     <arg name="map_file" default="$(find robot_navigation)/maps/test1.yaml"/>
@@ -18,8 +18,6 @@
         <rosparam file="$(find robot_navigation)/config/dwa_local_planner_params.yaml" command="load" />
         <rosparam file="$(find robot_navigation)/config/move_base_params.yaml" command="load" />
     </node>
-    
-    
     
 </launch> 
 
